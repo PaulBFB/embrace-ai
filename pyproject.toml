@@ -11,3 +11,8 @@ dependencies = [
     "pytest>=8.4.1",
     "typer>=0.16.0",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest-cov>=6.2.1",
+]
