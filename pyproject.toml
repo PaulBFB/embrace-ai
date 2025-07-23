@@ -16,3 +16,16 @@ dependencies = [
 dev = [
     "pytest-cov>=6.2.1",
 ]
+
+[tool.coverage.run]
+source = ["src"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+    "raise AssertionError"
+]
+show_missing = true
+skip_covered = false
